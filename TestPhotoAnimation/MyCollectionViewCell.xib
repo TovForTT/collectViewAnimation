@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-V5-BCs">
+                        <rect key="frame" x="18" y="8" width="164" height="184"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lf7-wp-1xb">
+                                <rect key="frame" x="0.0" y="0.0" width="164" height="184"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lf7-wp-1xb" secondAttribute="bottom" id="0rI-a9-ofF"/>
+                            <constraint firstItem="lf7-wp-1xb" firstAttribute="leading" secondItem="vYj-V5-BCs" secondAttribute="leading" id="R0Z-Jz-0TV"/>
+                            <constraint firstItem="lf7-wp-1xb" firstAttribute="top" secondItem="vYj-V5-BCs" secondAttribute="top" id="Ryb-eD-WUD"/>
+                            <constraint firstAttribute="trailing" secondItem="lf7-wp-1xb" secondAttribute="trailing" id="YfJ-Ht-TNT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vYj-V5-BCs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="JjP-ZC-KK4"/>
+                <constraint firstAttribute="trailingMargin" secondItem="vYj-V5-BCs" secondAttribute="trailing" constant="10" id="l53-em-YuR"/>
+                <constraint firstItem="vYj-V5-BCs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" constant="10" id="mF1-vv-Gh8"/>
+                <constraint firstAttribute="bottomMargin" secondItem="vYj-V5-BCs" secondAttribute="bottom" id="z9W-ad-ggM"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="vYj-V5-BCs" id="5j4-Wc-aMD"/>
+                <outlet property="heroImageV" destination="lf7-wp-1xb" id="jnt-ra-Ryg"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="-98"/>
+        </collectionViewCell>
+    </objects>
+</document>
